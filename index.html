@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Impromptu Podcast</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="title">Awesome Cool Title!</h1>
+    <nav>
+      <ul class="list">
+        <li><a class="nav-link" href="./about.html">About</a></li>
+        <li><a class="nav-link" href="#episodes">Episodes</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>  
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2>Hi there! Welcome to the Impromptu podcast!</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia harum, ipsa, adipisci iusto perferendis laboriosam ea explicabo et repellat maxime ex fugit temporibus ab nobis molestiae, deleniti quas iste? Dicta.</p>
+  </main>
+
+  <!-- Sound Cloud -->
+  <div class="audio-container">
+    <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1305238363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/imprompt-u" title="Imprompt[u]" target="_blank" style="color: #cccccc; text-decoration: none;">Imprompt[u]</a> · <a href="https://soundcloud.com/imprompt-u/impromptu-episode-1" title="Imprompt[u] Episode 1" target="_blank" style="color: #cccccc; text-decoration: none;">Imprompt[u] Episode 1</a></div>
+  </div>
+
+  <div class="youtube-container">
+  <!-- Youtube - ep. 2 -->
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0hk9Dao3R1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  <!-- Youtube - ep. 3 -->
+    <div class="video-container1">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8q5jnuahIco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form class="contact-form-container" id="contact-form">
+    <div class="input-container">
+      <label id="message-box" for="message">Send us a message!</label>
+      <textarea class="input-field" id="message" placeholder="Type your message"></textarea>
+    </div>
+
+    <div class="input-container">
+      <label id="name-label" for="name">Name</label>
+      <input class="input-field" type="text" id="name" placeholder="Your name" required>
+    </div>
+    
+    <div class="input-container">
+      <label id="email-label" for="email">Email</label>
+      <input class="input-field" type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    
+    <button type="submit" id="submit">Submit</button>
+</form>
+
+
+  </section>
+<!-- Footer -->
+  <footer>
+    <h2>Thank you!</h2>
+  </footer>
+
+</body>
+</html>
