@@ -4,6 +4,10 @@
   --nav-color: #335C67;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -43,20 +47,24 @@ hr {
   color: #E09F3E;
 }
 
-/* TODO: make underline animation work lol */
 
-.list li::after {
-  content: '';
-  height: 3px;
-  width: 0%;
-  background: #ffb347;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5;
+.list li {
+  position: relative;
 }
 
-.list li:hover::after {
+.list li::before {
+  content: '';
+  z-index: 5;
+  height: 3px;
+  width: 0%;
+  background-color:#ffb347;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 300ms ease-out;
+}
+
+.list li:hover::before {
   width: 100%;
 }
 
@@ -64,6 +72,19 @@ hr {
   text-decoration: none;
   color: #ffb347;
   transition: 0.5s;
+}
+
+.welcome-card {
+  padding: 20px;
+  width: 50vw;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  background: #E09F3E;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0, 0.25);
+  text-align: center;
 }
 
 /* AUDIO STYLING START */
@@ -75,6 +96,12 @@ hr {
 }
 
 /* VIDEO STYLING START */
+
+.video-container1 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 30px;
+}
 
 .youtube-container {
   display: flex;
@@ -92,7 +119,8 @@ CONTACT FORM STYLING START
   width: 50vw;
   margin-right: auto;
   margin-left: auto;
-  background-color: #E09F3E;
+  margin-bottom: 20px;
+  background: #E09F3E;
   border-radius: 25px;
   box-shadow: 0 2px 8px rgba(0,0,0, 0.25);
   /* display */
@@ -118,21 +146,60 @@ CONTACT FORM STYLING START
   border: 4px solid #540b0e;
 }
 
-#submit {
+button {
   background-color: #9E2A2B;
   color: whitesmoke;
   border: 2px solid #540b0e;
   border-radius: 10px;
   padding: 10px 20px;
   box-shadow: 0 0 5px black;
+  cursor: pointer;
 }
 
-#submit:hover {
+button:hover {
   background-color: #9f3c3e;
   font-weight: bolder;
 }
 
+/* TODO: make button completely work*/
+
+button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  font-family: ubuntu;
+}
+
 footer {
+  min-height: 100px;
   background-color: #335C67;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.socials-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

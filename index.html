@@ -1,78 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-  <title>Impromptu Podcast</title>
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <h1 class="title">Awesome Cool Title!</h1>
-    <nav>
-      <ul class="list">
-        <li><a class="nav-link" href="./about.html">About</a></li>
-        <li><a class="nav-link" href="#episodes">Episodes</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>  
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+    <title>Impromptu Podcast</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">Impromptu Podcast!</h1>
+      <nav>
+        <ul class="list">
+          <li><a class="nav-link" href="./about.html">About</a></li>
+          <li><a class="nav-link" href="#episodes">Episodes</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Main -->
-  <main>
-    <h2>Hi there! Welcome to the Impromptu podcast!</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia harum, ipsa, adipisci iusto perferendis laboriosam ea explicabo et repellat maxime ex fugit temporibus ab nobis molestiae, deleniti quas iste? Dicta.</p>
-  </main>
-
-  <!-- Sound Cloud -->
-  <div class="audio-container">
-    <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1305238363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/imprompt-u" title="Imprompt[u]" target="_blank" style="color: #cccccc; text-decoration: none;">Imprompt[u]</a> · <a href="https://soundcloud.com/imprompt-u/impromptu-episode-1" title="Imprompt[u] Episode 1" target="_blank" style="color: #cccccc; text-decoration: none;">Imprompt[u] Episode 1</a></div>
-  </div>
-
-  <div class="youtube-container">
-  <!-- Youtube - ep. 2 -->
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/0hk9Dao3R1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-  <!-- Youtube - ep. 3 -->
-    <div class="video-container1">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/8q5jnuahIco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Contact Form -->
-  <form class="contact-form-container" id="contact-form">
-    <div class="input-container">
-      <label id="message-box" for="message">Send us a message!</label>
-      <textarea class="input-field" id="message" placeholder="Type your message"></textarea>
-    </div>
-
-    <div class="input-container">
-      <label id="name-label" for="name">Name</label>
-      <input class="input-field" type="text" id="name" placeholder="Your name" required>
-    </div>
+    <!-- Main -->
+    <div class="welcome-card">
+    <main>
+      
+      <h2>Hi there! Welcome to the Impromptu podcast!</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia harum,
+        ipsa, adipisci iusto perferendis laboriosam ea explicabo et repellat
+        maxime ex fugit temporibus ab nobis molestiae, deleniti quas iste?
+        Dicta.
+        <!--Click for more button-->
+        <div class="button1">
+          <button><a href="./about.html">Click to learn more</a></button>
+          </div>
+      </p>
+    </main>
+</div>
     
-    <div class="input-container">
-      <label id="email-label" for="email">Email</label>
-      <input class="input-field" type="email" id="email" placeholder="Enter your email" required>
+
+    <h2><strong>Recent Episodes</strong></h2>
+      <!-- Youtube - recent episode-->
+      <div class="video-container1">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8q5jnuahIco"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
-    
-    <button type="submit" id="submit">Submit</button>
-</form>
+
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form-container" id="contact">
+      <div class="input-container">
+        <label id="message-box" for="message">Send us a message!</label>
+        <textarea
+          class="input-field"
+          id="message"
+          placeholder="Type your message"
+        ></textarea>
+      </div>
+
+      <div class="input-container">
+        <label id="name-label" for="name">Name</label>
+        <input
+          class="input-field"
+          type="text"
+          id="name"
+          placeholder="Your name"
+          required
+        />
+      </div>
+
+      <div class="input-container">
+        <label id="email-label" for="email">Email</label>
+        <input
+          class="input-field"
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <!--Footer info-->
+      <div class="footer-text">
+        <h2>Thank you!</h2>
+        <h2>Made with	&hearts; by Emily and Mike!</h2>
+        <h3>Copyright 2022</h3>
+      </div>
+      
+      <!--Icon container-->
+      <div class="socials-container">
+        
+       <!--Links in columns-->
+       <div class="social" id="facebook">
+        <!-- icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+        <!-- text -->
+        <p>Facebook</p>
+       </div>
+       
+       <div class="social" id="twitter">
+        <!-- icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+        <!-- text -->
+        <p>Twitter</p>
+       </div>
+
+      </div>
+      
+      
 
 
-  </section>
-<!-- Footer -->
-  <footer>
-    <h2>Thank you!</h2>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
