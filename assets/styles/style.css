@@ -1,8 +1,15 @@
-/* variables */
+/*=============== 
+INDEX.HTML STYLES
+================*/
+
+/* VARIABLES */
+
 :root {
   --bg-color: #FFF3B0;
   --nav-color: #335C67;
 }
+
+/* GENERAL STYLING START */
 
 html {
   scroll-behavior: smooth;
@@ -27,11 +34,21 @@ hr {
   align-items: center;
   justify-content: space-between;
   letter-spacing: .05em;
+  
 }
 
 .header h1 {
   margin-left: 15px;
 }
+
+.title {
+color:#E09F3E;
+border-style: solid;
+border-color:#E09F3E;
+border-width: 5px;
+padding: 10px;
+}
+
 
 .list {
   display: flex;
@@ -87,6 +104,18 @@ hr {
   text-align: center;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border-style: solid;
+  border-color: #540B0E;
+  background-color: #540B0E;
+  width: 50%;
+  height: 3px;
+}
 /* AUDIO STYLING START */
 
 .audio-container {
@@ -110,9 +139,7 @@ hr {
   margin: 30px 30px;
 }
 
-/*======================== 
-CONTACT FORM STYLING START
-=========================*/
+/* CONTACT FORM STYLING START */
 
 .contact-form-container {
   padding: 20px;
@@ -188,7 +215,22 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 50px;
+  border-style: solid;
+  border-color: white;
+  padding: 10px;
+}
+
+.footer-text h2,
+.footer-text h3 {
+  margin-top: 5px;
+}
+
+.footer-text h2 span {
+  color: red;
+  margin: 0 .2em;
+  animation: infinite thump 1s;
 }
 
 .socials-container {
@@ -202,4 +244,70 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.social svg {
+  width: 35px;
+  height: 30px;
+  transition: all 200ms ease-in;
+}
+
+.social svg:hover {
+  transform: scale(1.15);
+}
+
+/*================ 
+ABOUT PAGE STYLING
+=================*/
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.about-image-container img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.button-container {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-evenly;
+}
+
+/*================= 
+ANIMATION KEYFRAMES
+==================*/
+
+@keyframes thump {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.5); 
+  }
+  40% {
+    transform: scale(1);
+  }
 }

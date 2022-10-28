@@ -28,14 +28,14 @@ function forwardButton() {
 
 function updateInfo() {
   if (carouselInfoIndex === 0) {
-    aboutImage.src = "https://dummyimage.com/600x400/000/fff";
-    aboutText.textContent =
+    aboutImage.src = "https://www.sidehustlenation.com/wp-content/uploads/2019/04/podcast-production-process-fb-1.jpg";
+    aboutText.textContent = "General info"
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut laboriosam error atque quis, dolorem minus quaerat neque sapiente mollitia, ad eos sint est a! Magnam, nesciunt! Distinctio, quaerat quisquam.";
   } else if (carouselInfoIndex === 1) {
-    aboutImage.src = "https://dummyimage.com/600x400/000/0011ff&text=EMILY";
+    aboutImage.src = "https://i.pinimg.com/736x/1b/17/58/1b1758db44922fc156544c85b989c75c.jpg";
     aboutText.textContent = "Emily's info";
   } else {
-    aboutImage.src = "https://dummyimage.com/600x400/000/0011ff&text=SHAWN";
+    aboutImage.src = "https://upload.wikimedia.org/wikipedia/en/f/fc/Paul_Bettany_as_Vision.jpg";
     aboutText.textContent = "Shawn's info";
   }
 }
