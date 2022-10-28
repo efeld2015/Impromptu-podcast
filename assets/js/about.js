@@ -29,8 +29,7 @@ function forwardButton() {
 function updateInfo() {
   if (carouselInfoIndex === 0) {
     aboutImage.src = "https://www.sidehustlenation.com/wp-content/uploads/2019/04/podcast-production-process-fb-1.jpg";
-    aboutText.textContent = "General info"
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut laboriosam error atque quis, dolorem minus quaerat neque sapiente mollitia, ad eos sint est a! Magnam, nesciunt! Distinctio, quaerat quisquam.";
+    aboutText.textContent = "Impromptu is a podcast for music nerds! We are classically trained, work as conductors, composers, and performers, and we love all types of music;" 
   } else if (carouselInfoIndex === 1) {
     aboutImage.src = "https://i.pinimg.com/736x/1b/17/58/1b1758db44922fc156544c85b989c75c.jpg";
     aboutText.textContent = "Emily's info";
@@ -39,6 +38,9 @@ function updateInfo() {
     aboutText.textContent = "Shawn's info";
   }
 }
+
+// run udpate info function on page load
+updateInfo();
 
 // when a button is pressed current index is changed
 firstButton.addEventListener("click", backButton);

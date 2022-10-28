@@ -275,7 +275,7 @@ ABOUT PAGE STYLING
   padding: 20px;
 }
 
-.about-image-container img {
+.about-card img {
   height: 200px;
   width: 300px;
   object-fit: cover;
@@ -288,6 +288,24 @@ ABOUT PAGE STYLING
   justify-content: space-between;
   align-items: space-evenly;
 }
+
+
+/*=================== 
+EPISODES PAGE STYLING
+====================*/
+
+.episode-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+ }
+
+ .episode-links iframe {
+  padding: 20px;
+ }
+
 
 /*================= 
 ANIMATION KEYFRAMES

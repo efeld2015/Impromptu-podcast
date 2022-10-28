@@ -16,7 +16,7 @@ async function postData(nameValue, emailValue, messageValue) {
   });
   if (response.ok) {
     console.log(response);
-    window.alert("It went through!");
+    window.alert("Thanks for the submission");
   } else {
     console.log(response);
     window.alert("It didn't go through!");
@@ -24,7 +24,7 @@ async function postData(nameValue, emailValue, messageValue) {
 }
 
 //form submit, prevents page refresh
-function formSubmit(event) {
+async function formSubmit(event) {
   event.preventDefault();
 
   //assigned the user input into a JS variable
@@ -32,18 +32,9 @@ function formSubmit(event) {
   var emailValue = emailInput.value;
   var messageValue = messageInput.value;
 
-  console.log(
-    "name value " +
-      nameValue +
-      " email value " +
-      emailValue +
-      " messageValue " +
-      messageValue
-  );
-
   if ((nameValue, emailValue, messageValue)) {
     // email form data
-    postData(nameValue, emailValue, messageValue);
+    await postData(nameValue, emailValue, messageValue);
 
     // reset form values
     nameValue = "";
